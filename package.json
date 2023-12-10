@@ -4,6 +4,11 @@
   "description": "A simple extension to output a randomize value based on a regular expression. Use this to generate things like ",
   "version": "0.0.1",
   "publisher": "mondo@nodegarden.net",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodeGarden/randexp_vscode.git"
+  },
+  "license": "UNLICENSED",
   "engines": {
     "vscode": "^1.85.0"
   },
