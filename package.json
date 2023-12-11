@@ -1,7 +1,7 @@
 {
   "name": "randexp",
   "displayName": "randexp",
-  "description": "A simple extension to output a randomize value based on a regular expression. Use this to generate things like ",
+  "description": "A simple extension to output a randomize value based on a regular expression. Use this to generate things like `xx123xx-113xxx-abc` from `([A-Za-z]|[0-9]){7}-([A-Za-z]|[0-9]){6}-([A-Za-z]|[0-9]){3}`. Supports various keywords like: `randexp`, `random`, `hash`, `regex`.",
   "version": "0.0.1",
   "publisher": "mondo@nodegarden.net",
   "repository": {
@@ -12,6 +12,7 @@
   "engines": {
     "vscode": "^1.85.0"
   },
+  "keywords": ["randexp", "regex", "hash", "pattern", "random"],
   "categories": [
     "Other"
   ],
@@ -22,12 +23,15 @@
   "contributes": {
     "commands": [{
       "command": "extension.createRandomValueByRegex",
-      "title": "Create random value by RegEx"
+      "title": "Create random value by RegEx pattern (randexp, random, hash, regex)"
     }]
   },  
+  "categories": ["Formatters"],
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
+    "package": "vsce package && npm run moveVsixToDist",
+    "moveVsixToDist": "mkdir -p dist && mv *.vsix dist/",
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
