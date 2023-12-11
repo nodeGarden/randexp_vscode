@@ -3,7 +3,7 @@
   "displayName": "randexp",
   "description": "A simple extension to output a randomize value based on a regular expression. Use this to generate things like `xx123xx-113xxx-abc` from `([A-Za-z]|[0-9]){7}-([A-Za-z]|[0-9]){6}-([A-Za-z]|[0-9]){3}`. Supports various keywords like: `randexp`, `random`, `hash`, `regex`.",
   "version": "0.0.1",
-  "publisher": "mondo@nodegarden.net",
+  "publisher": "nodeGarden",
   "repository": {
     "type": "git",
     "url": "https://github.com/nodeGarden/randexp_vscode.git"
@@ -16,6 +16,7 @@
   "categories": [
     "Other"
   ],
+  "icon": "icon.png",
   "activationEvents": [
     "onCommand:extension.createRandomValueByRegex"
   ],
