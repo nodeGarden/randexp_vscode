@@ -8,3 +8,5 @@ Very simple extension. Simply set your cursor to the point you want to insert, o
 This is purely just encapsulating the RandExp library: https://www.npmjs.com/package/randexp  (all credit for functionality there); I'm just putting it as an extension for my own convenience.
 
 Icon from: https://www.iconfinder.com/icons/211887/shuffle_icon
+
+Code at: https://github.com/nodeGarden/randexp_vscode
